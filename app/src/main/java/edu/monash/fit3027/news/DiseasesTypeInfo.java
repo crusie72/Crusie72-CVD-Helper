@@ -58,7 +58,6 @@ public class DiseasesTypeInfo extends AppCompatActivity {
 
         // after retrive the data and set the data to related text views to make it content displaty
 
-        typename.setPaintFlags(typename.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         typename.setText(cursor.getString(0));
         des.setText(cursor.getString(1));
         caus.setText(cursor.getString(2));

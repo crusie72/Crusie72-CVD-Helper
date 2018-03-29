@@ -11,6 +11,7 @@ import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -121,9 +122,13 @@ public class DefaultFragment extends Fragment {
                 listNews.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     public void onItemClick(AdapterView<?> parent, View view,
                                             int position, long id) {
-                        Intent i = new Intent(getActivity(), NewsDetails.class);
-                        i.putExtra("url", dataList.get(+position).get(KEY_URL));
-                        startActivity(i);
+                        Intent intent = new Intent();
+                        intent.setAction(Intent.ACTION_VIEW);
+                        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                        String url = dataList.get(+position).get(KEY_URL);
+                        intent.setData(Uri.parse(url));
+                        startActivity(intent);
+
                     }
                 });
 
