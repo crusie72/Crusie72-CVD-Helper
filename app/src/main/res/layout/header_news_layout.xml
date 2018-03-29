@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="190dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:layout_weight="7"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/galleryImage"
+            android:layout_width="385dp"
+            android:layout_height="100dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#000"
+                android:shadowRadius="1.0"
+                android:textColor="#0b0000"
+                android:textSize="17sp"
+                android:layout_marginBottom="5dp"
+                android:maxLines="2"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+
+                android:text="This is news title"/>
+
+            <TextView
+                android:id="@+id/sdetails"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
