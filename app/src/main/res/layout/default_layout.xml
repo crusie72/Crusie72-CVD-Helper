@@ -17,10 +17,11 @@
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:background="@android:color/background_light"
-        android:text="CVD News"
+        android:text="Cardiovascular News"
         android:textColor="@color/colorPrimary"
         android:textSize="25dp"
         android:textStyle="bold"
+        android:textAlignment="center"
         android:visibility="visible" />
 
 

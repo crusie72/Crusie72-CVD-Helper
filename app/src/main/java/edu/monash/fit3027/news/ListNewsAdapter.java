@@ -61,16 +61,7 @@ class ListNewsAdapter extends BaseAdapter {
 
         try{
             // removing the word "medical new today" in the title
-            if(song.get(MainActivity.KEY_TITLE).contains("Medical News Today")) {
-                String orginalTitle = song.get(MainActivity.KEY_TITLE);
-                String [] arr = orginalTitle.split(" ", 2);
-                String [] arry = arr[1].split(" ", 2);
-                String [] finalTitle = arry[1].split(" ", 2);
 
-
-                holder.title.setText(finalTitle[1]);
-            }
-            else
             holder.title.setText(song.get(MainActivity.KEY_TITLE));
 
             holder.sdetails.setText(song.get(MainActivity.KEY_DESCRIPTION));

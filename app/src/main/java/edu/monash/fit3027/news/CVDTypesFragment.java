@@ -100,7 +100,7 @@ public class CVDTypesFragment extends Fragment {
 
             }
         });
-
+        getActivity().setTitle("CVD Types");
         return myView;
     }
 }

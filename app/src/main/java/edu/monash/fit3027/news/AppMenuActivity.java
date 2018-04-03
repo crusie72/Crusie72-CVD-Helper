@@ -55,6 +55,7 @@ public class AppMenuActivity extends AppCompatActivity
                 .replace(R.id.content_frame
                         , new DefaultFragment())
                 .commit();
+            setTitle("CVD Helper");
             //super.onBackPressed();
         }
     }

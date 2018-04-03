@@ -24,7 +24,7 @@ public class AboutPageFragment extends Fragment {
 
         TextView about = (TextView)myView.findViewById(R.id.abouctContentID);
         String aboutContent = "\nCVD Helper is one mobile application that educate people about what they can do to prevent cardiovascular disease and provide heart-healthy living guidance. By using CVD Helper, the users will understand about different types of cardiovascular diseases but also learn how to prevent from the disease. Additionally, they can also easily find the nearest hospitals if needed on the appointment. \n"+"\n@Build Version: 1.0 \n"+"Released Date : 29/03/2018";
-
+        getActivity().setTitle("About CVD Helper");
         about.setText(aboutContent);
         return myView;
 
