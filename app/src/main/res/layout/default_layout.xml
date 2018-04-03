@@ -9,13 +9,15 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="60dp" />
+        android:layout_height="57dp"
+        android:background="@color/colorPrimary" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Health News"
+        android:layout_height="35dp"
+        android:background="@android:color/background_light"
+        android:text="CVD News"
         android:textColor="@color/colorPrimary"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -28,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
-        android:divider="#F5F5F5"
+        android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp"
         android:visibility="visible" />
 

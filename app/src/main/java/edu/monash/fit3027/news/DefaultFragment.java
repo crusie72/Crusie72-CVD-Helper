@@ -87,8 +87,10 @@ public class DefaultFragment extends Fragment {
             String xml = "";
             DefaultFragment defaultFragment=new DefaultFragment();
             String urlParameters = "";
-            xml = defaultFragment.excuteGet("https://newsapi.org/v2/top-headlines?sources=medical-news-today&apiKey=" + API_KEY, urlParameters);
-            return xml;
+          // xml = defaultFragment.excuteGet("https://newsapi.org/v2/top-headlines?sources=medical-news-today&category=health&apiKey=" + API_KEY, urlParameters);
+           // xml = defaultFragment.excuteGet("https://newsapi.org/v2/top-headlines?country=au&category=health&apiKey=" + API_KEY, urlParameters);
+        xml = defaultFragment.excuteGet("https://newsapi.org/v2/everything?q=Cardiovascular&sources=medical-news-today&sortBy=articles&apiKey=" + API_KEY, urlParameters);
+        return xml;
         }
 
         // this is the main function after retriving the data from news api stores the data and maps to list
@@ -110,7 +112,9 @@ public class DefaultFragment extends Fragment {
                         map.put(KEY_URL, jsonObject.optString(KEY_URL).toString());
                         map.put(KEY_URLTOIMAGE, jsonObject.optString(KEY_URLTOIMAGE).toString());
                         map.put(KEY_PUBLISHEDAT, jsonObject.optString(KEY_PUBLISHEDAT).toString());
-                        dataList.add(map);
+
+                            dataList.add(map);
+
                     }
                 } catch (JSONException e) {
                     Toast.makeText(getActivity().getApplicationContext(), "Unexpected error", Toast.LENGTH_SHORT).show();
